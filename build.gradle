@@ -1,0 +1,26 @@
+group = "com.howardlewisship"
+version = "0.0.1"
+
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenRepo name: 'clojars', url: 'http://clojars.org/repo'
+    }
+    dependencies {
+        classpath "clojuresque:clojuresque:1.5.4"
+    }
+}
+
+apply plugin: "java"
+apply plugin: "idea"
+apply plugin: "clojure"
+
+dependencies {
+    compile "org.spockframework:spock-core:0.6-groovy-1.8"
+    compile localGroovy()
+}
+
+repositories {
+    mavenCentral()
+    clojarsRepo()
+}
