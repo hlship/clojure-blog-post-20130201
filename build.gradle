@@ -16,6 +16,7 @@ apply plugin: "idea"
 apply plugin: "clojure"
 
 dependencies {
+    compile "org.clojure:clojure:1.4.0"
     compile "org.spockframework:spock-core:0.6-groovy-1.8"
     compile localGroovy()
 }
