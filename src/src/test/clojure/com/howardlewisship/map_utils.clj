@@ -1,5 +1,5 @@
 (ns com.howardlewisship.map-utils
-  (:import [java.util Collection])
+  (import [java.util Collection])
   (use clojure.test)
   (require [clojure.string :as s]))
 
